@@ -1,15 +1,14 @@
 import React from "react";
-// import User from "./Components/User";
+import Navbar from "./Components/Navbar";
 import HomeContainer from "./Containers/HomeContainer";
 
 const App: React.FC = () => {
     return (
         <>
-            <div className="text-center">
-                <h1>App Component</h1>
+            <Navbar />
+            <div className="container">
+                <HomeContainer />
             </div>
-            {/* <User data={{ name: "Suraj Mahamuni", age: 26 }} /> */}
-            <HomeContainer/>
         </>
     );
 };
